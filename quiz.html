@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>So you think you can code quiz</title>
+    <!--view port for responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="content">
+    <header>
+        <div class="wrapper">
+            <h1>So you think you can code?</h1>
+        </div>
+    </header>
+    <section class="quizContent">
+        <div class="wrapper">
+            <form class="quiz" name="quiz" id="nameForm">
+                <div class="questions">
+                    <p>What is HTML?</p>
+                    <input type="radio" class="userResponse" value="true" name="q1">
+                    <label for="userResponse" class="userOption">Hyper Text Markup Language</label>
+
+                    <input type="radio" class="userResponse" value="false" name="q1">
+                    <label for="userResponse" class="userOption">How to Make Lasagna</label>
+                </div>
+
+                <div class="questions">
+                    <p>How many tags are in a regular element?</p>
+                    <input type="radio" class="userResponse" value="false" name="q2">
+                    <label for="userResponse" class="userOption">1</label>
+                    
+                    <input type="radio" class="userResponse" value="true" name="q2">
+                    <label for="userResponse" class="userOption">2</label>
+                </div>
+
+                <div class="questions">
+                    <p>What does View Source do?</p>
+                    <input type="radio" class="userResponse" value="true" name="q3">
+                    <label for="userResponse" class="userOption">Open a new browser page</label>
+                    
+                    <input type="radio" class="userResponse" value="false" name="q3">
+                    <label for="userResponse" class="userOption">Nothing</label>
+                </div>
+
+                <div class="questions">
+                    <p>Which Character is used to indicate an end tag?</p>
+                    <input type="radio" class="userResponse" value="false" name="q4">
+                    <label for="userResponse" class="userOption">*</label>
+
+                    <input type="radio" class="userResponse" value="true" name="q4">
+                    <label for="userResponse" class="userOption">/</label>
+                </div>
+
+                <div class="questions">
+                    <p>CSS stands for:</p>
+                    <input type="radio" class="userResponse" value="false" name="q5">
+                    <label for="userResponse" class="userOption">Computerized Style Sheets</label>
+
+                    <input type="radio" class="userResponse" value="true" name="q5">
+                    <label for="userResponse" class="userOption">Cascading Style Sheets</label>
+                </div>
+
+                <div class="questions">
+                    <p>How do you select an ID with the name test</p>
+                    <input type="radio" class="userResponse" value="true" name="q6">
+                    <label for="userResponse" class="userOption">#test</label>
+
+                    <input type="radio" class="userResponse" value="false" name="q6">
+                    <label for="userResponse" class="userOption">.test</label>
+                </div>
+
+                <div class="questions">
+                    <p>JavaScript is the same name as Java</p>
+                    <input type="radio" class="userResponse" value="false" name="q7">
+                    <label for="userResponse" class="userOption">true</label>
+
+                    <input type="radio" class="userResponse" value="true" name="q7">
+                    <label for="userResponse" class="userOption">false</label>
+                </div>
+
+                <div class="questions">
+                    <p>Which operator is used to assign a value to a variable?</p>
+                    <input type="radio" class="userResponse" value="true" name="q8">
+                    <label for="userResponse" class="userOption">=</label>
+
+                    <input type="radio" class="userResponse" value="true" name="q8">
+                    <label for="userResponse" class="userOption">X</label>
+                </div>
+
+                <div class="questions">
+                    <p>Which sign does jQuery use as a shortcut for jQuery?</p>
+                    <input type="radio" class="userResponse" value="false" name="q9">
+                    <label for="userResponse" class="userOption">%</label>
+
+                    <input type="radio" class="userResponse" value="true" name="q9">
+                    <label for="userResponse" class="userOption">$</label>
+                </div>
+
+            </form>
+
+            <input type="submit" form="nameForm" value="submit test">
+            <div class="results"></div>
+     
+        </div>
+    </section>
+
+</body>
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="js/application.js" type="text/javascript"></script>
+
+</html>

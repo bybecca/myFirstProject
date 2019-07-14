@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* PLEASE NOTE THIS IS RESPONSIVE BUT IT IS FIXED NOT FLUID */
+
+
+/*-----this is how you write a comment ------*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62.5%;
+    /*10px = 1.0em*/
+}
+
+html {
+    font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*----structure----*/
+
+/* .wrapper {}
+
+header {}
+
+footer {}
+
+#content {}
+
+nav {}
+
+section {} */
+
+/*----navigaion----*/
+
+
+/* a:link,
+a:visited {}
+
+a:hover,
+a:active {} */
+
+/*----typography----*/
+
+/* 
+
+  h1, h2, p{
+        color: #3953A4; 
+    }
+    h1, h2 {
+        font-family: 'montserratbold';
+    }
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {} */
+
+h1, h2, .startQuiz {
+    color: #3953A4; 
+    font-family: 'montserratbold';
+}
+
+.questions p { 
+    font-family: 'montserratregular';
+  }
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*Media Queries*/
+
+/*mobile*/
+
+@media (min-width: 320px) {
+
+    .wrapper {
+        width: 310px; 
+        margin: 0 auto; 
+    }
+    h1 {
+        font-size: 3.2em;
+        margin-top: 50px; 
+        width: 300px;
+    }
+
+    h2 {
+        font-size: 2.0em;
+        margin-top: 20px; 
+        width: 300px;
+        /* background-color: #fff;  */
+    }
+
+    #content {
+        background-image: 
+        url(../gfx/codeSymbols.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 300px 200px;
+        background-attachment: fixed; 
+        }
+
+    .quiz {
+        background-color: #F0F0F0;
+        height: 250px;
+        padding: 20px 10px; 
+        opacity: .7;
+        overflow: auto;
+    }
+
+    .startQuiz {
+        background-color: #fff; 
+        border: solid 2px; 
+        font-size: 1.6em;
+        margin-top: 20px; 
+        padding: 10px 10px; 
+        text-decoration: none; 
+    }
+
+    .starQuiz:link {
+        text-decoration: none; 
+    }
+    .startQuiz:hover {
+        background-color: #3953A4; 
+        color: #fff; 
+        text-decoration: none; 
+    }
+    .startQuiz:visited {
+        text-decoration: none; 
+    }
+
+    .questions {
+        clear: both; 
+        width: 90%; 
+        margin-bottom: 20px; 
+      }
+
+      .questions p { 
+        font-size: 1.6em;
+        margin-bottom: 20px; 
+      }
+
+      .userOption {
+        font-family: 'montserratlight';
+        font-size: 1.5em; 
+        line-height: 2.0;
+      }
+
+      input[type=radio] {
+        margin-right: 5px; 
+        margin-left: 15px; 
+      }
+
+      input[type=submit] {
+        background-color: #fff;
+        border: solid 2px; 
+        color: #3953A4; 
+        font-family: 'montserratbold';
+        font-size: 2.2em;
+        margin-top: 20px; 
+        padding: 10px 10px; 
+        text-decoration: none; 
+      }
+      input[type=submit]:hover {
+        background-color: #3953A4; 
+        color: #fff; 
+        text-decoration: none; 
+      }
+
+ }
+
+
+/*tablet*/
+
+@media (min-width: 768px) {
+    .wrapper {
+        width: 758px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 3.8em;
+        margin-top: 100px; 
+        width: 400px;
+    }
+
+    h2 {
+        font-size: 2.6em;
+    }
+
+    #content {
+        background-size: 350px 250px;
+    }
+
+}
+
+/*desktop*/
+
+@media (min-width: 1200px) { 
+
+    .wrapper {
+        margin: 0 auto; 
+        width: 960px; 
+    }
+
+    #content {
+    background-size: 432px 320px;
+    }
+
+    h1 {
+        font-size: 5.7em;
+        width: 617px;
+    }
+
+    h2 {
+        font-size: 4.0em;
+    }
+
+ }
